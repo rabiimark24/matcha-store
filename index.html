@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matcha Store</title>
+    <link rel="stylesheet" href="Styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">Much and Matcha Cafe</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div class="banner"> 
+            <h3 class="banner-subtitle">over 10 flavors of matcha</h3>
+            <h1 class="banner-title">HIGH QUALITY MATCHA</h1>
+            <a href="skillss.html" class="banner-btn">Our Menu</a>
+        </div>   
+    </header>
+
+    <div class="content-divider"></div>
+
+    <section class="skills">
+        <article class="skills">
+            <span class="skills-icon">
+                <i class="fas fa-leaf"></i>
+            </span>
+            <h3 class="skill-title">Quality Ingredients</h3>
+            <p class="skill-text">We source the finest matcha from traditional tea farms to ensure the highest quality and taste.</p>
+        </article>
+        <article class="skills">
+            <span class="skills-icon">
+                <i class="fas fa-heartbeat"></i>
+            </span>
+            <h3 class="skill-title">Health Benefits</h3>
+            <p class="skill-text">Matcha is packed with antioxidants and nutrients, promoting overall wellness and vitality.</p>
+        </article>
+        <article class="skills">
+            <span class="skills-icon">
+                <i class="fas fa-mug-hot"></i>
+            </span>
+            <h3 class="skill-title">Traditional Recipes</h3>
+            <p class="skill-text">Experience the rich history of matcha with our time-honored recipes, passed down through generations.</p>
+        </article>
+        <article class="skills">
+            <span class="skills-icon">
+                <i class="fas fa-glass-martini-alt"></i>
+            </span>
+            <h3 class="skill-title">Signature Drinks</h3>
+            <p class="skill-text">Explore our innovative matcha creations, blending traditional flavors with modern twists.</p>
+        </article>
+    </section>
+
+   <section class="about" id="about">
+    <article class="about-img">
+        <img src="https://i.pinimg.com/originals/da/fc/ed/dafced8326e1279be8089d8bc86c98af.gif" class="about-picture" alt="Matcha Tea">
+    </article>
+
+    <div class="section-content">
+        <h2>About Us</h2>
+        <p>We are dedicated to bringing you the finest matcha tea with rich flavors and high quality. Learn more about our journey and commitment to excellence.</p>
+        <a href="learnmore.html" class="about-link">Learn More</a>
+    </div>
+</section>
+
+
+
+    <section class="products" id="products">
+        <h2 class="section-title">Our Products</h2>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://matcha.com/cdn/shop/files/30g-OrganicSuperior-Front_900x.jpg?v=1700488938" alt="Matcha Powder">
+                <h3 class="product-name">Premium Matcha Powder</h3>
+                <p class="product-price">$25.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="https://matcha.com/cdn/shop/products/20221124_sd_7441_1800x1800.jpg?v=1669410671" alt="Matcha Tea">
+                <h3 class="product-name">Matcha Green Tea</h3>
+                <p class="product-price">$18.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!--  more products as needed -->
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://matcha.com/cdn/shop/products/20221016_sd_3988_360x.jpg?v=1668653015" alt="Matcha Whisk">
+                <h3 class="product-name">Matcha Accessories</h3>
+                <p class="product-price">$40.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="https://cdn.shopify.com/s/files/1/1456/8506/products/spacematcha44_400x400.jpg?v=1703724051" alt="Space Matcha">
+                <h3 class="product-name">Space Matcha™ Organic Matcha Instant Cubes</h3>
+                <p class="product-price">$32.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-item">
+            <h3 class="contact-title">
+                <span class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                Address
+            </h3>
+            <p class="contact-text">543 N Florida Ave, Los Angeles, CA 35543</p>
+            <button class="contact-btn">View Map</button>
+        </div>
+
+        <div class="contact-item">
+            <h3 class="contact-title">
+                <span class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                Email
+            </h3>
+            <p class="contact-text">support@matchastore.com</p>
+            <button class="contact-btn" onclick="window.location.href='mailto:support@matchastore.com';">Send Email</button>
+        </div>
+
+        <div class="contact-item">
+            <h3 class="contact-title">
+                <span class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </span>
+                Phone
+            </h3>
+            <p class="contact-text">+123 456 89</p>
+            <button class="contact-btn" onclick="window.location.href='tel:+12345689';">Call</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>Much and Matcha Cafe</h2>
+                <p>Bringing you the finest matcha and a variety of matcha-based drinks and treats. Follow us on social media for updates and special offers!</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:info@matchastore.com" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact us at: <a href="mailto:info@matchastore.com">info@matchastore.com</a></p>
+                <p>&copy; 2024 Much and Matcha Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
