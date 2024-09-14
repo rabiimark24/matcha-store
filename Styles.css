@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+/* Universal Box Sizing and Reset Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Apply a default font for consistency */
+    line-height: 1.5; /* Improve text readability */
+    color: #333; /* Default text color for readability */
+}
+
+
+:root {
+    --primaryColor: #72A424; /* Soft pink */
+    --secondaryColor: #BFE97B; /* Light pastel pink */
+    --mainLight: #CBEFAA; /* Very light pink */
+    --mainGreen: #FCA3AD; /* Pale green */
+    --mainMidGreen: #799567; /* Muted green */
+    --mainDarkGreen: #5B744B; /* Dark olive green */
+    --highlightGreen: #B4BD9A; /* Deep forest green */
+    --mainTransition: all 0.3s ease-in-out;
+    --letterSpacing: 0.5rem;
+}
+
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.5;
+    background-color: rgba(114, 164, 36, 0.5); 
+}
+
+
+.header {
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("https://i.pinimg.com/236x/d9/47/2f/d9472fd20bbc49aa62b3aebc2bcfcbbf.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    letter-spacing: var(--letterSpacing);
+    color: #fff;
+}
+
+.banner-subtitle {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.banner-title {
+    font-size: 3rem; /* Large font size for prominence */
+    font-weight: 700; /* Bold text for impact */
+    margin: 1rem 0; /* Spacing around the title */
+    color: pink; /* Main text color */
+    font-family: 'Poppins', sans-serif; /* Apply the stylish font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for a 3D effect */
+    background: linear-gradient(45deg, #ff6f61, pink); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make the text fill color transparent */
+    display: inline-block; /* Ensure background gradient is clipped properly */
+    padding: 0.5rem 1rem; /* Padding around the text for emphasis */
+    border-radius: 8px; /* Rounded corners for background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for additional depth */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.banner-title:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: #72A424; /* Change text color on hover */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Enhance shadow effect on hover */
+}
+
+
+
+.banner-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#72A424;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--mainTransition);
+}
+.banner-btn:hover {
+    background-color: pink;
+    opacity: 0.7;
+    
+}
+
+.content-divider {
+    height: 2px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+                                                    /* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem;
+    transition: var(--mainTransition);
+}
+
+.skills article {
+    background-color: #fff;
+    border: 1px solid var(--mainGray);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--mainTransition);
+}
+
+.skills article:hover {
+    transform: translateY(-5px);
+    background-color: #72A424;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    color: var(--primaryColor);
+    margin-bottom: 1rem;
+    transition: var(--mainTransition);
+    text-align: center;
+}
+.skill-title:hover{
+    color: pink;
+}
+
+.skill-text {
+    margin: 0 auto;
+    max-width: 13rem;
+}
+
+.skills-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+.skills-icon :hover{
+ color: pink;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+                                                  /* About Section */
+/* About Section Styles */
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5; /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the section */
+}
+
+.about-img {
+    flex: 1; /* Allow it to take up available space */
+    display: flex; /* Use Flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.about-picture {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match border radius for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for image */
+}
+
+
+
+
+
+                                                   /* Section Content Styles */
+
+
+.section-content {
+    flex: 1;
+    color: #333; /* Default text color for readability */
+}
+
+.section-content h2 {
+    font-size: 2rem; /* Title size */
+    font-weight: 700; /* Bold title */
+    color: #72A424; /* Green color for the title */
+    margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.section-content p {
+    font-size: 1rem; /* Text size */
+    color: #555; /* Slightly lighter text color for contrast */
+    margin-bottom: 1rem; /* Space below the paragraph */
+    line-height: 1.6; /* Improved readability */
+}
+
+.about-link {
+    color: #72A424; /* Pink link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold link text */
+    padding: 0.5rem 1rem; /* Padding around the link */
+    border-radius: 4px; /* Rounded corners */
+    border: 2px solid pink; /* Pink border */
+    background-color: #f5f5f5; /* Light background for contrast */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    display: inline-block; /* Ensure link has block-level properties */
+    margin-top: 1rem; /* Space above the link */
+}
+
+.about-link:hover {
+    background-color: pink; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: pink; /* Pink border on hover */
+}
+
+/* Optional: Center content in the section */
+.section-content {
+    text-align: center; /* Center text for a balanced look */
+}
+
+
+
+                                                          /* Product Section */
+.products {
+    padding: 2rem;
+    background-color: var(--mainBeige);
+    margin-bottom: 59px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-item {
+    text-align: center;
+    background-color: pink;
+    border: 1px solid var(--mainGray);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: pink;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #72A424;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+    background-color: var(--primaryColor);
+    color: pink;
+    font-family: inherit;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.add-to-cart-btn:hover {
+    background-color: white;
+}
+
+
+                                          /* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+   
+}
+
+.contact-item {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    max-height: 300px;
+    border: 2px solid #72A424; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* Background color for contact items */
+}
+.contact-item:hover{
+    background-color: pink;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #72A424; /* Use the #72A424 color */
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #72A424; /* Icon color to match the title */
+}
+
+.contact-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color for readability */
+}
+
+.contact-btn {
+    color: white;
+    background: linear-gradient(45deg, #72A424, pink); /* Gradient background from #72A424 to pink */
+    border: 2px solid #72A424; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing inside the button */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Align with other elements */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, pink, #72A424); /* Inverse gradient on hover */
+    color: #72A424; /* Change text color to #72A424 */
+    border-color: pink; /* Change border color to pink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+
+
+
+                                               /* Footer Section */
+.footer {
+    background-color: #72A424;
+    color: var(--mainBeige);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid var(--primaryColor);
+}
+
+.footer-info h2 {
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+
+.footer-info p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    transition: var(--mainTransition);
+}
+
+.social-icon:hover {
+    color: var(--primaryColor);
+}
+
+.footer-contact {
+    font-size: 0.9rem;
+    color: var(--highlightColor);
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+                                                       /* Navigation Bar Styling */
+.nav {
+    background-color: var(--primaryColor);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--mainGray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: var(--mainTransition);
+}
+
+.nav:hover {
+    background-color: pink;
+    opacity: 0.9;
+}
+
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: var(--letterSpacing);
+    transition: var(--mainTransition);
+}
+
+.nav-logo:hover {
+    color: #72A424;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: var(--mainTransition);
+    padding: 0 10px; /* Adjust the value to your preference */
+}
+
+
+.nav-link:hover {
+    color: #72A424;
+}

@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #72A424;
+    color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner-title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+                                                 /* Main Menu Styles */
+.menu-main {
+    padding: 20px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #72A424;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #72A424;
+    margin: 10px auto 0;
+}
+
+/* Menu Items Styles */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.item-details {
+    padding: 10px;
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #72A424;
+}
+
+.item-details p {
+    font-family: initial;
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: hotpink;
+}
+
+.buy-button {
+    background-color: #72A424;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+}
+
+.buy-button:active {
+    background-color: #2c6e49;
+    transform: scale(0.95);
+}
+                                               /* Footer Styles */
+
+.footer-contact {
+    background-color: #72A424;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid var(--highlightColor);
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-contact a {
+    color: #FFE8A1; /* Matcha store's highlight color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}

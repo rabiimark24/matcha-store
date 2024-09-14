@@ -1,0 +1,112 @@
+/* Payment Page Styling */
+
+
+
+
+/* Header Styling */
+
+header {
+    background-color: #72A424; /* Matcha green background for the header */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-bottom: 4px solid var(--secondaryColor); /* Pink border at the bottom */
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    color: var(--secondaryColor); /* Light pink color for the title */
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 8px var(--secondaryColor), 0 0 16px var(--secondaryColor); /* Glowing effect */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/* Glow Animation for Banner Title */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px var(--secondaryColor), 0 0 16px var(--secondaryColor);
+    }
+    to {
+        text-shadow: 0 0 16px var(--secondaryColor), 0 0 24px var(--secondaryColor);
+    }
+}
+
+
+.payment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor)); /* Matcha green to pink gradient */
+    padding: 40px 0;
+}
+
+.payment-container {
+    background-color:  #72A424;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.payment-title {
+    font-size: 1.8rem;
+    color: pink;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.payment-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Pink color for labels */
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--primaryColor); /* Green border for input fields */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--textColor);
+    background-color: #f9f9f9; /* Light grey for input fields */
+}
+
+.payment-form input::placeholder {
+    color:  #72A424 ;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-details .expiry-date,
+.card-details .cvv {
+    width: 48%;
+}
+
+.pay-now-btn {
+    background-color: pink; /* Pink color */
+    color:#72A424;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pay-now-btn:hover {
+    background-color: #ff90b3; /* Lighter pink on hover */
+}
